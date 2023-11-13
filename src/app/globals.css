@@ -2,26 +2,112 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+html {
+  background: #0000;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-image: linear-gradient(#000000, #dcdcdc, #d3d3d3, #ffffff);
+  margin: 0;
+  padding: 0;
+}
+footer {
+  height: 300px;
+  background: black;
+}
+* {
+  font-family: Inter, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+ul {
+  list-style: none;
+}
+
+li {
+  float: left;
+}
+
+.hightText {
+  color: #ffff;
+  z-index: 1;
+}
+.hightText h2 {
+  font-size: 3vw;
+}
+.hightText h1 {
+  font-size: 4vw;
+}
+
+h2 > .accent {
+  -webkit-text-stroke: 1px #ffff;
+  color: transparent;
+}
+
+.arrow {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 50vw;
+  animation: arrowEvent 2s infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes arrowEvent {
+  from {
+    top: 90vh;
+  }
+  to {
+    top: 92vh;
+  }
+}
+
+@keyframes rotateElement {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+#example-element {
+  margin: 15px;
+  width: 80px;
+  height: 80px;
+  transform-style: preserve-3d;
+  position: absolute;
+  top: 80vh;
+  animation: rotateElement 5s infinite linear;
+}
+
+.face {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: inherit;
+  font-size: 60px;
+  color: #fff;
+}
+
+.front {
+  background: rgba(90, 90, 90, 0.7);
+  transform: translateZ(20px);
+}
+
+.right {
+  background: rgba(90, 90, 90, 0.7);
+  transform: rotateY(120deg) translateZ(20px);
+}
+
+.left {
+  background: rgba(90, 90, 90, 0.7);
+  transform: rotateY(-120deg) translateZ(20px);
 }
