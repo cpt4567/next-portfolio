@@ -10,15 +10,13 @@ body {
   background-image: linear-gradient(#000000, #dcdcdc, #d3d3d3, #ffffff);
   margin: 0;
   padding: 0;
+  height: 100vh;
 }
 footer {
   height: 300px;
   background: black;
 }
-* {
-  font-family: Inter, sans-serif;
-  -webkit-font-smoothing: antialiased;
-}
+
 img {
   width: 100%;
   height: 100%;

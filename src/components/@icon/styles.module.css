@@ -1,0 +1,7 @@
+.icon {
+  padding: 3px;
+  border-radius: 5px;
+}
+.icon:hover {
+  background: #d3d3d3;
+}

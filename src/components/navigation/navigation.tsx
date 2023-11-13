@@ -1,13 +1,7 @@
-'uselient';
-import {
-  HouseIcon,
-  FaceIcon,
-  CoPresentIcon,
-  DescriptionIcon,
-} from '@/components/navigation/@icon/index';
-import { NavigationLayout } from '@/components/navigation/@layout/index';
+'use client';
 
-import React from 'react';
+import { LeftIcon, RightIcon, HomeIcon, InfoIcon, SkillIcon, WorkIcon } from '../@icon';
+import styles from './styles.module.css';
 
 export default function NavigationComponent() {
   /**
@@ -18,18 +12,19 @@ export default function NavigationComponent() {
 
   const handleItemDragStart = (event: React.DragEvent<HTMLDivElement>) => {
     const target = event.target as HTMLDivElement;
-    const id = target.id;
-    event.dataTransfer.setData('text/plain', id);
+    const className = target.className;
+    event.dataTransfer.setData('text/plain', className);
   };
-
   return (
     <>
-      <NavigationLayout id="draggable-item" draggable={true} onDragStart={handleItemDragStart}>
-        <HouseIcon />
-        <FaceIcon />
-        <CoPresentIcon />
-        <DescriptionIcon />
-      </NavigationLayout>
+      <div className={styles['draggable-container']} draggable={true} onDragStart={handleItemDragStart}>
+        <RightIcon />
+        <HomeIcon />
+        <InfoIcon />
+        <SkillIcon />
+        <WorkIcon />
+        <LeftIcon />
+      </div>
     </>
   );
 }

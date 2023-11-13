@@ -1,5 +1,6 @@
-import Image from 'next/image';
-import MainComponent from './main';
+import NavigationComponent from '@/components/navigation/navigation';
+import MainComponent from './main/main';
+import { Suspense } from 'react';
 
 export default function Home() {
   /**
@@ -27,8 +28,8 @@ export default function Home() {
     }
   };
   return (
-    <main>
+    <Suspense fallback={<div>loading...</div>}>
       <MainComponent />
-    </main>
+    </Suspense>
   );
 }
