@@ -27,9 +27,5 @@ export default function Home() {
       draggableItem.style.top = `${event.clientY - rect.height / 2}px`;
     }
   };
-  return (
-    <Suspense fallback={<div>loading...</div>}>
-      <MainComponent />
-    </Suspense>
-  );
+  return <MainComponent />;
 }
