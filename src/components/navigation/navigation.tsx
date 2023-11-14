@@ -11,13 +11,19 @@ export default function NavigationComponent() {
   */
 
   const handleItemDragStart = (event: React.DragEvent<HTMLDivElement>) => {
+    console.log(event);
     const target = event.target as HTMLDivElement;
-    const className = target.className;
-    event.dataTransfer.setData('text/plain', className);
+    const id = target.id;
+    event.dataTransfer.setData('text/plain', id);
   };
   return (
     <>
-      <div className={styles['draggable-container']} draggable={true} onDragStart={handleItemDragStart}>
+      <div
+        id="draggable"
+        className={styles['draggable-container']}
+        draggable={true}
+        onDragStart={handleItemDragStart}
+      >
         <RightIcon />
         <HomeIcon />
         <InfoIcon />
