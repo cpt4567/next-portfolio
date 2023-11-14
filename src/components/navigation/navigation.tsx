@@ -1,34 +1,47 @@
 import Link from 'next/link';
-import { HomeIcon } from '../@icon';
+import { GitIcon, HomeIcon, InfoIcon, NotionIcon, SkillIcon, WorkIcon } from '../@icon';
 import styles from './styles.module.css';
 
 export default function NavigationComponent() {
   return (
     <div className={styles['nav-container']}>
-      <div id="dock">
+      <div>
         <ul>
           <li>
-            <span>Address Book</span>
+            <span>home</span>
             <Link href={'/'}>
               <HomeIcon />
             </Link>
           </li>
           <li>
-            <span>App Store</span>
+            <span>info</span>
             <Link href={'/info'}>
-              <HomeIcon />
+              <InfoIcon />
             </Link>
           </li>
           <li>
-            <span>Chrome</span>
+            <span>skill</span>
             <Link href={'/'}>
-              <HomeIcon />
+              <SkillIcon />
             </Link>
           </li>
           <li>
-            <span>Firefox</span>
+            <span>work</span>
             <Link href={'/'}>
-              <HomeIcon />
+              <WorkIcon />
+            </Link>
+          </li>
+          <li>
+            <span>gitHub</span>
+            <Link href={'/'}>
+              <GitIcon />
+            </Link>
+          </li>
+
+          <li>
+            <span>notion</span>
+            <Link href={'/'}>
+              <NotionIcon />
             </Link>
           </li>
         </ul>
