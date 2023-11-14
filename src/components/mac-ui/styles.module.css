@@ -1,0 +1,46 @@
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+.mac-ui-container {
+  background: #ffffff;
+  border-radius: 8px;
+  width: 90vw;
+  height: 80vh;
+  animation: insade 0.5s ease;
+  transform: translateX(-50%);
+  animation: slideIn 0.5s ease;
+  animation-fill-mode: forwards;
+}
+
+.mac-ui-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #e6e6e6;
+  padding: 8px 12px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom: 1px solid #d6d6d6;
+}
+
+.mac-ui-title {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.mac-ui-cotrol {
+  display: flex;
+}
+
+.mac-ui-btn {
+  width: 12px;
+  height: 12px;
+  margin-left: 8px;
+  border-radius: 50%;
+}

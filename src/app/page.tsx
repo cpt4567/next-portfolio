@@ -1,9 +1,10 @@
-import dynamic from 'next/dynamic';
+import MacUi from '../components/mac-ui/mac-ui';
 import MainComponent from './main/main';
-const DynamicHeader = dynamic(() => import('./main/main'), {
-  loading: () => <p>Loading...</p>,
-});
 
 export default function Home() {
-  return <MainComponent />;
+  return (
+    <MacUi title={''}>
+      <MainComponent />
+    </MacUi>
+  );
 }

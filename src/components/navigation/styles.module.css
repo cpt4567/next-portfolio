@@ -1,6 +1,7 @@
 .draggable-container {
   position: fixed;
   display: flex;
+  left: 80vw;
   justify-content: space-around;
   align-items: center;
   border-radius: 5px;
@@ -12,4 +13,5 @@
 }
 .draggable-container:hover {
   background: rgba(252, 252, 252, 1);
+  
 }

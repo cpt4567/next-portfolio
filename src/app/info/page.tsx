@@ -1,3 +1,5 @@
+import MacUi from '@/components/mac-ui/mac-ui';
+
 export default function Page() {
-  return <h1>info</h1>;
+  return <div>sdfsdfd</div>;
 }
