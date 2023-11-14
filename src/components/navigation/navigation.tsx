@@ -1,53 +1,38 @@
+import Link from 'next/link';
+import { HomeIcon } from '../@icon';
+import styles from './styles.module.css';
+
 export default function NavigationComponent() {
   return (
-    <div id="dock-container">
+    <div className={styles['nav-container']}>
       <div id="dock">
         <ul>
           <li>
             <span>Address Book</span>
-            <a href="#">
-              <img src="icon-1.png" />
-            </a>
+            <Link href={'/'}>
+              <HomeIcon />
+            </Link>
           </li>
           <li>
             <span>App Store</span>
-            <a href="#">
-              <img src="icon-2.png" />
-            </a>
+            <Link href={'/info'}>
+              <HomeIcon />
+            </Link>
           </li>
           <li>
             <span>Chrome</span>
-            <a href="#">
-              <img src="icon-3.png" />
-            </a>
+            <Link href={'/'}>
+              <HomeIcon />
+            </Link>
           </li>
           <li>
             <span>Firefox</span>
-            <a href="#">
-              <img src="icon-4.png" />
-            </a>
+            <Link href={'/'}>
+              <HomeIcon />
+            </Link>
           </li>
         </ul>
       </div>
     </div>
   );
 }
-/*   <div
-        id="draggable"
-        className={styles['draggable-container']}
-        draggable={true}
-        onDragStart={handleItemDragStart}
-      >
-        <Link href={'/'}>
-          <HomeIcon />
-        </Link>
-        <Link href={'/info'}>
-          <InfoIcon />
-        </Link>
-        <Link href={'/info'}>
-          <SkillIcon />
-        </Link>
-        <Link href={'/info'}>
-          <WorkIcon />
-        </Link>
-      </div>  */

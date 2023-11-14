@@ -9,9 +9,12 @@
 
 .mac-ui-container {
   background: #ffffff;
+  position: absolute;
   border-radius: 8px;
   width: 90vw;
   height: 80vh;
+  top: 5vh;
+  left: 5vw;
   animation: insade 0.5s ease;
   transform: translateX(-50%);
   animation: slideIn 0.5s ease;
@@ -27,6 +30,7 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   border-bottom: 1px solid #d6d6d6;
+  cursor: move;
 }
 
 .mac-ui-title {

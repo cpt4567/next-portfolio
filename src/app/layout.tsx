@@ -3,7 +3,6 @@ import { Inter } from 'next/font/google';
 import 'tailwindcss/tailwind.css';
 import './globals.css';
 import NavigationComponent from '@/components/navigation/navigation';
-import SubLayout from '@/app/subLayout';
 
 // font
 const inter = Inter({ subsets: ['latin'] });
@@ -16,11 +15,9 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: layoutType) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.className} overflow-hidden flex justify-center items-center`}
-      >
+      <body className={`${inter.className} overflow-hidden `}>
         <NavigationComponent />
-        <SubLayout>{children}</SubLayout>
+       {children}
       </body>
     </html>
   );
