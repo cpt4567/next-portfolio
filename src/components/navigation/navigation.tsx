@@ -1,8 +1,13 @@
+'use client';
 import Link from 'next/link';
 import { GitIcon, HomeIcon, InfoIcon, NotionIcon, SkillIcon, WorkIcon } from '../@icon';
 import styles from './styles.module.css';
 
 export default function NavigationComponent() {
+  const haldleWindowOpen = (url: string) => {
+    window.open(url);
+  };
+
   return (
     <div className={styles['nav-container']}>
       <div>
@@ -21,28 +26,32 @@ export default function NavigationComponent() {
           </li>
           <li>
             <span>skill</span>
-            <Link href={'/'}>
+            <Link href={'/skill'}>
               <SkillIcon />
             </Link>
           </li>
           <li>
             <span>work</span>
-            <Link href={'/'}>
+            <Link href={'/work'}>
               <WorkIcon />
             </Link>
           </li>
           <li>
             <span>gitHub</span>
-            <Link href={'/'}>
+            <a onClick={() => haldleWindowOpen('https://github.com/cpt4567')}>
               <GitIcon />
-            </Link>
+            </a>
           </li>
 
           <li>
             <span>notion</span>
-            <Link href={'/'}>
+            <a
+              onClick={() =>
+                haldleWindowOpen('https://www.notion.so/KMS-Pro-ff56f51a890740a9a80b8f9755293965')
+              }
+            >
               <NotionIcon />
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
