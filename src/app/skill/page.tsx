@@ -1,3 +1,3 @@
 export default function Page() {
-  return <div>sdfsdfd</div>;
+  return <div>react react native nextjs </div>;
 }
