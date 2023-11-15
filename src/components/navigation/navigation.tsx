@@ -1,35 +1,57 @@
+'use client';
 import Link from 'next/link';
-import { HomeIcon } from '../@icon';
+import { GitIcon, HomeIcon, InfoIcon, NotionIcon, SkillIcon, WorkIcon } from '../@icon';
 import styles from './styles.module.css';
 
 export default function NavigationComponent() {
+  const haldleWindowOpen = (url: string) => {
+    window.open(url);
+  };
+
   return (
     <div className={styles['nav-container']}>
-      <div id="dock">
+      <div>
         <ul>
           <li>
-            <span>Address Book</span>
+            <span>home</span>
             <Link href={'/'}>
               <HomeIcon />
             </Link>
           </li>
           <li>
-            <span>App Store</span>
+            <span>info</span>
             <Link href={'/info'}>
-              <HomeIcon />
+              <InfoIcon />
             </Link>
           </li>
           <li>
-            <span>Chrome</span>
-            <Link href={'/'}>
-              <HomeIcon />
+            <span>skill</span>
+            <Link href={'/skill'}>
+              <SkillIcon />
             </Link>
           </li>
           <li>
-            <span>Firefox</span>
-            <Link href={'/'}>
-              <HomeIcon />
+            <span>work</span>
+            <Link href={'/work'}>
+              <WorkIcon />
             </Link>
+          </li>
+          <li>
+            <span>gitHub</span>
+            <a onClick={() => haldleWindowOpen('https://github.com/cpt4567')}>
+              <GitIcon />
+            </a>
+          </li>
+
+          <li>
+            <span>notion</span>
+            <a
+              onClick={() =>
+                haldleWindowOpen('https://www.notion.so/KMS-Pro-ff56f51a890740a9a80b8f9755293965')
+              }
+            >
+              <NotionIcon />
+            </a>
           </li>
         </ul>
       </div>
