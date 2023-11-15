@@ -52,9 +52,9 @@ export default function MacUi({ title, children }: Props) {
     <div className={styles['mac-ui-container']} id="draggable">
       <div className={styles['mac-ui-header']} ref={tagRef}>
         <div className={styles['mac-ui-cotrol']}>
+          <div className={styles['mac-ui-btn']} style={{ background: '#ee5f5b' }} />
           <div className={styles['mac-ui-btn']} style={{ background: '#f7d54a' }} />
           <div className={styles['mac-ui-btn']} style={{ background: '#62c462' }} />
-          <div className={styles['mac-ui-btn']} style={{ background: '#ee5f5b' }} />
         </div>
         <span className={styles['mac-ui-title']}>{title}</span>
       </div>
