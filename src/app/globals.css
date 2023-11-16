@@ -2,14 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 body {
-  background-image: url('../../public/background/mac_back.jpeg');
-  background-size: cover;
+  background: linear-gradient(-45deg, #50ffe5, #394798, #23a6d5, #bc8f8f);
+  background-size: 400% 400%;
+  animation: gradient 8s ease infinite;
+
   margin: 0;
   padding: 0;
   height: 100vh;
 }
-
 
 .hightText {
   color: #ffff;

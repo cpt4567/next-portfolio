@@ -1,0 +1,28 @@
+.align-icon {
+  display: flex;
+  flex-direction: column;
+  margin: 3px;
+}
+
+.align-icon-long {
+  width: 15px;
+  height: 2px;
+  background-color: #333;
+  margin: 1px 0;
+  display: block;
+}
+.align-icon-short-left {
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  margin: 1px 0;
+  display: block;
+}
+.align-icon-short-right {
+  width: 10px;
+  height: 2px;
+  background-color: #333;
+  margin: 1px 0;
+  margin-left: 5px;
+  display: block;
+}
