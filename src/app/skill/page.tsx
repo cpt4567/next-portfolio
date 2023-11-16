@@ -1,11 +1,17 @@
 export default function Page() {
   return (
-    <div className="grid grid-cols-3 gap-5 place-content-between">
-      <div className="h-4/5">react</div>
+    <div className="flex flex-row justify-between h-full" style={{ background: '#1E1E1E' }}>
+      <div className="flex flex-col h-full" style={{ background: '#333333', width: '5%' }}>
+        <button>1</button>
 
-      <div className="h-4/5">react native</div>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+      </div>
 
-      <div className="h-4/5">nextjs</div>
+      <div className="flex flex-col h-full" style={{ background: '#fffff', width: '5%' }}>
+        nextjs
+      </div>
     </div>
   );
 }
