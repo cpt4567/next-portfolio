@@ -1,24 +1,26 @@
-@keyframes slideIn {
+/* @keyframes slideIn {
   from {
     transform: translateY(100%);
   }
   to {
     transform: translateY(0);
   }
-}
+} */
 
 .mac-ui-container {
-  background: #ffffff;
   position: absolute;
+  display: flex;
+  flex-direction: column;
   border-radius: 8px;
   width: 90vw;
   height: 80vh;
   top: 5vh;
   left: 5vw;
-  animation: insade 0.5s ease;
-  transform: translateX(-50%);
-  animation: slideIn 0.5s ease;
-  animation-fill-mode: forwards;
+  /*   transform: translateX(-50%);
+  animation: slideIn 1s ease;
+  animation-fill-mode: forwards; */
+  background-color: rgba(72, 70, 70, 0.3);
+  backdrop-filter: blur(10px);
 }
 
 .mac-ui-header {

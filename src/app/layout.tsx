@@ -17,7 +17,11 @@ export default function RootLayout({ children }: layoutType) {
     <html lang="en">
       <body className={`${inter.className} overflow-hidden `}>
         <NavigationComponent />
-       {children}
+        <div className="wave" style={{ width: 500, height: 500 }}></div>
+        <div className="wave" style={{ width: 700, height: 700 }}></div>
+        <div className="wave" style={{ width: 1000, height: 1000 }}></div>
+
+        {children}
       </body>
     </html>
   );
