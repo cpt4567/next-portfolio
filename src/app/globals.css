@@ -18,10 +18,14 @@ body {
   background: linear-gradient(-45deg, #50ffe5, #394798, #23a6d5, #bc8f8f);
   background-size: 400% 400%;
   animation: gradient 8s ease infinite;
-
   margin: 0;
   padding: 0;
   height: 100vh;
+}
+.title-section {
+  padding: 40px 40px 140px 40px;
+  border-radius: 5px;
+  background-color: rgba(31, 31, 31, 0.3);
 }
 
 .hightText {
@@ -39,12 +43,37 @@ h2 > .accent {
   -webkit-text-stroke: 1px #ffff;
   color: transparent;
 }
-
+p {
+  color: #e7feff;
+  font-size: 3em;
+  margin: 20px;
+  font-weight: 900;
+}
 @keyframes rotateElement {
   from {
     transform: rotateY(0deg);
   }
   to {
     transform: rotateY(360deg);
+  }
+}
+
+.wave {
+  opacity: 0.4;
+  position: absolute;
+  background: rgba(101, 155, 216, 0.9);
+  left: 50%;
+  top: 70%;
+  transform-origin: 50% 48%;
+  border-radius: 45%;
+  animation: drift 5000ms infinite linear;
+}
+
+@keyframes drift {
+  from {
+    transform: rotate(0deg);
+  }
+  from {
+    transform: rotate(360deg);
   }
 }

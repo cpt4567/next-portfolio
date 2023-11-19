@@ -54,7 +54,12 @@ export default function Overlay() {
       </div>
 
       <div
-        style={{ display: !state.open ? 'block' : 'none', position: 'absolute', left: '40vw' }}
+        style={{
+          display: !state.open ? 'block' : 'none',
+          position: 'absolute',
+          left: '40vw',
+          top: 10,
+        }}
         className={'hightText'}
       >
         <HrText open={!state.open}>
