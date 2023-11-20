@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="h-full flex flex-row justify-center items-center">
       <div className="w-1/2 flex flex-col items-center justify-between">
-        <ul className={`title-section text-slate-300`}>
+        <ul className={`section text-slate-300`}>
           <li>생년월일</li>
           <li>1996.04.04</li>
           <li>전화</li>
