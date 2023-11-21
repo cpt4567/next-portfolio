@@ -40,7 +40,7 @@ export default function Overlay() {
 
   return (
     <>
-      <div style={{ position: 'absolute', left: '20vw' }} className={'hightText'}>
+      <div style={{ position: 'absolute', left: '20vw', top: 30 }} className={'hightText'}>
         <HrText open={state.open}>
           <h1 className={lato.className}>{`I'm`}</h1>
 
@@ -58,7 +58,7 @@ export default function Overlay() {
           display: !state.open ? 'block' : 'none',
           position: 'absolute',
           left: '40vw',
-          top: 10,
+          top: 30,
         }}
         className={'hightText'}
       >

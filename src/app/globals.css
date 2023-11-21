@@ -22,7 +22,7 @@ body {
   padding: 0;
   height: 100vh;
 }
-.title-section {
+.section {
   padding: 40px 40px 140px 40px;
   border-radius: 5px;
   background-color: rgba(31, 31, 31, 0.3);
@@ -62,7 +62,7 @@ p {
   opacity: 0.4;
   position: absolute;
   background: rgba(101, 155, 216, 0.9);
-  left: 50%;
+  left: 70%;
   top: 70%;
   transform-origin: 50% 48%;
   border-radius: 45%;
