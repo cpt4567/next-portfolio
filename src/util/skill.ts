@@ -1,9 +1,24 @@
 export const skills: {
   [key in string]: { title: string; content: string };
 } = {
-  js: { title: 'java script', content: '' },
-  ts: { title: 'type script', content: '' },
-  react: { title: 'react', content: '' },
-  rn: { title: 'react native', content: '' },
-  next: { title: 'next js', content: '' },
+  js: {
+    title: 'java script',
+    content:
+      'vanilla js 및 ecma script 6 + 문법을 숙지하고 typescript를 사용하여 개발하고 있습니다.',
+  },
+  react: {
+    title: 'react',
+    content:
+      'react를 활용한 웹개발 경험이 있으며 redux,recoil등과 같은 전역 상태관리 라이브러리 사용개발 경험이 있습니다. (webpack , vite 번들러) (snowpack 컴파일 개념) 번들링 사용에 관심이 있으며 css framework 사용(Material, tailwind )사용 경험이 있습니다.',
+  },
+  rn: {
+    title: 'react native',
+    content:
+      'react native을 사용하여 android와 ios 크로스플랫폼을 개발 기존에 스토어에 배포된 앱을 리뉴얼 개발한 경험이 있습니다. ',
+  },
+  next: {
+    title: 'next js',
+    content:
+      'next 13을 활용 웹개발 경험이 있으며 dynamic route(동적라우팅 정적라우팅)을 활용하고 crs과 ssg의 개념을 파악하고 있습니다. ',
+  },
 };
