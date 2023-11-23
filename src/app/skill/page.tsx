@@ -1,12 +1,16 @@
 import { skills } from '@/util/skill';
-import Card from './_component/card';
+import ContextCard, { Paginaiton } from './components/context-slider';
+import { IndexProvider } from './provider/index-provider';
 
 export default function Page() {
   return (
-    <div className=" w-full h-full overflow-auto">
-      {Object.entries(skills).map(([key, value], index) => (
-        <Card key={key} {...{ ...value, index }} />
-      ))}
+    <div className=" w-full h-full">
+      <IndexProvider>
+        {Object.entries(skills).map(([key, value], index) => (
+          <ContextCard key={key} {...{ ...value, index }} />
+        ))}
+        <Paginaiton />
+      </IndexProvider>
     </div>
   );
 }
