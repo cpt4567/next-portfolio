@@ -5,7 +5,6 @@ interface Props {
 }
 
 export default function Stepper({ slug }: Props) {
-  console.log(workList[slug]);
   return (
     <div
       style={{ background: 'rgba(31, 31, 31, 0.7)' }}
@@ -20,10 +19,9 @@ export default function Stepper({ slug }: Props) {
             <h3 className="font-medium leading-tight">{title}</h3>
             <p className="text-sm">{day}</p>
             <p className="text-sm">{technology}</p>
-            <p className="text-sm">{work}</p>
-            <div>
+            <div className="px-3 py-3 border">
               {work.map((data, index) => (
-                <span key={`key_${index}`}>{data}</span>
+                <div key={`key_${index}`}>{data}</div>
               ))}
             </div>
           </li>
