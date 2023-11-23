@@ -26,7 +26,7 @@ export default function NavigationComponent() {
           </li>
           <li>
             <span>skill</span>
-            <Link href={'/skill/js'}>
+            <Link href={'/skill'}>
               <SkillIcon />
             </Link>
           </li>
