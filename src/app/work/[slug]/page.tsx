@@ -10,7 +10,7 @@ export default function Page({ params }: Props) {
   return (
     <div className="flex flex-col h-full">
       <TabList {...{ slug }} />
-      <Stepper />
+      <Stepper {...{ slug }} />
     </div>
   );
 }

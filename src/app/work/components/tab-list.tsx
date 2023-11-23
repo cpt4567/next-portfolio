@@ -1,4 +1,4 @@
-import { tabList } from '@/util/tab';
+import { tabList } from '@/util/work';
 import Link from 'next/link';
 
 interface Props {
