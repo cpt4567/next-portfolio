@@ -1,7 +1,3 @@
-import { infomation } from '@/util/info';
-import { Lato } from 'next/font/google';
-
-const lato = Lato({ weight: '900', subsets: ['latin'] });
 
 export default function Page() {
   return (
