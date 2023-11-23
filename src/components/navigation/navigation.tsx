@@ -32,7 +32,7 @@ export default function NavigationComponent() {
           </li>
           <li>
             <span>work</span>
-            <Link href={'/work'}>
+            <Link href={'/work/bs'}>
               <WorkIcon />
             </Link>
           </li>
