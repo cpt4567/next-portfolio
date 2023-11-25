@@ -1508,6 +1508,11 @@ hasown@^2.0.0:
   dependencies:
     function-bind "^1.1.2"
 
+heroicons@^2.0.18:
+  version "2.0.18"
+  resolved "https://registry.yarnpkg.com/heroicons/-/heroicons-2.0.18.tgz#e4a5d7d0884fb1859f7171d2e41a7d89181c768e"
+  integrity sha512-3iaqznaz5GJ8Mox/eDfKHo7tYKuPiZV4vbg6pB6wjJhBa7ZKQlXT1KuUnsjkEiPy/ezyiqppOX6wUqYguMIq8w==
+
 ieee754@^1.2.1:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/ieee754/-/ieee754-1.2.1.tgz#8eb7a10a63fff25d15a57b001586d177d1b0d352"
