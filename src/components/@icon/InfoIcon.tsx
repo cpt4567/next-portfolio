@@ -3,7 +3,6 @@ import styles from './styles.module.css';
 export function InfoIcon() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="#ffffff"
       strokeWidth="1.5"

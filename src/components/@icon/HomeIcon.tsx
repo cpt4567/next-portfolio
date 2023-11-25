@@ -3,7 +3,6 @@ import styles from './styles.module.css';
 export function HomeIcon() {
   return (
     <svg
-      xmlns="http://www.w3.org/2000/svg"
       fill="#ffffff"
       viewBox="0 0 24 24"
       strokeWidth="1.5"
