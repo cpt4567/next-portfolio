@@ -1,7 +1,7 @@
 'use client';
 import Link from 'next/link';
-import { GitIcon, HomeIcon, InfoIcon, NotionIcon, SkillIcon, WorkIcon } from '../@icon';
 import styles from './styles.module.css';
+import { GitIcon, HomeIcon, InfoIcon, NotionIcon, SkillIcon, WorkIcon } from '../@icon';
 
 export default function NavigationComponent() {
   const haldleWindowOpen = (url: string) => {

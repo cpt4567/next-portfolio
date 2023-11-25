@@ -6,6 +6,7 @@ import { Press_Start_2P } from 'next/font/google';
 export interface Props {
   title: string;
   content: string;
+  hash: string[];
   header: { 'bg-color': string; 'text-color': string; 'header-title': string };
   index: number;
 }
@@ -13,7 +14,7 @@ export interface Props {
 const press = Press_Start_2P({ weight: '400', subsets: ['latin'] });
 
 // Consumer ui
-const ContextCard = ({ title, content, header, index }: Props) => {
+const ContextCard = ({ title, content, hash, header, index }: Props) => {
   const [number] = useIndex();
 
   return (
@@ -36,9 +37,14 @@ const ContextCard = ({ title, content, header, index }: Props) => {
         <p className="text-gray-700 text-base">{content}</p>
       </div>
       <div className="px-6 pt-4 pb-2">
-        <span className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-          #photography
-        </span>
+        {hash.map((data) => (
+          <span
+            key={data}
+            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
+          >
+            {`#${data}`}
+          </span>
+        ))}
       </div>
     </div>
   );
@@ -48,7 +54,7 @@ export const Paginaiton = ({ count }: { count: number }) => {
   const [number, setNumber] = useIndex();
 
   return (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center', marginTop: '5%' }}>
       {Array.from({ length: count }).map((_, index) => (
         <span
           key={`key_${index}`}
