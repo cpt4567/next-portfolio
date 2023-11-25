@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import 'tailwindcss/tailwind.css';
 import './globals.css';
 import NavigationComponent from '@/components/navigation/navigation';
+import Wave from '@/components/wave/wave';
 
 // font
 const inter = Inter({ subsets: ['latin'] });
@@ -17,10 +18,7 @@ export default function RootLayout({ children }: layoutType) {
     <html lang="en">
       <body className={`${inter.className} overflow-hidden `}>
         <NavigationComponent />
-        <div className="wave" style={{ width: 500, height: 500 }} />
-        <div className="wave" style={{ width: 700, height: 700 }} />
-        <div className="wave" style={{ width: 1000, height: 1000 }} />
-
+        <Wave />
         {children}
       </body>
     </html>
