@@ -1,13 +1,13 @@
 'use client';
 import Link from 'next/link';
 import styles from './styles.module.css';
-import { HomeIcon } from '../@icon/homeIcon';
+/* import { HomeIcon } from '../@icon/homeIcon';
 import { InfoIcon } from '../@icon/InfoIcon';
 import { GitIcon } from '../@icon/gitIcon';
 import { WorkIcon } from '../@icon/workIcon';
 import { NotionIcon } from '../@icon/notionIcon';
 import { SkillIcon } from '../@icon/skillIcon';
-
+ */
 export default function NavigationComponent() {
   const haldleWindowOpen = (url: string) => {
     window.open(url);
@@ -16,7 +16,7 @@ export default function NavigationComponent() {
   return (
     <div className={styles['nav-container']}>
       <div>
-        <ul>
+        {/*         <ul>
           <li>
             <span>home</span>
             <Link href={'/'}>
@@ -58,7 +58,7 @@ export default function NavigationComponent() {
               <NotionIcon />
             </a>
           </li>
-        </ul>
+        </ul> */}
       </div>
     </div>
   );
