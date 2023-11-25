@@ -1,12 +1,13 @@
 'use client';
 import Link from 'next/link';
 import styles from './styles.module.css';
-import { HomeIcon } from '../@icon/homeIcon';
+/* import { HomeIcon } from '../@icon/homeIcon';
 import { InfoIcon } from '../@icon/InfoIcon';
-import { GitIcon } from '../@icon/gitIcon';
 import { WorkIcon } from '../@icon/workIcon';
+import { SkillIcon } from '../@icon/skillIcon'; */
+
+import { GitIcon } from '../@icon/gitIcon';
 import { NotionIcon } from '../@icon/notionIcon';
-import { SkillIcon } from '../@icon/skillIcon';
 
 export default function NavigationComponent() {
   const haldleWindowOpen = (url: string) => {
@@ -20,25 +21,29 @@ export default function NavigationComponent() {
           <li>
             <span>home</span>
             <Link href={'/'}>
-              <HomeIcon />
+              home
+              {/*   <HomeIcon /> */}
             </Link>
           </li>
           <li>
             <span>info</span>
             <Link href={'/info'}>
-              <InfoIcon />
+              info
+              {/*  <InfoIcon /> */}
             </Link>
           </li>
           <li>
             <span>skill</span>
             <Link href={'/skill'}>
-              <SkillIcon />
+              skill
+              {/*               <SkillIcon /> */}
             </Link>
           </li>
           <li>
             <span>work</span>
             <Link href={'/work/bs'}>
-              <WorkIcon />
+              work
+              {/*      <WorkIcon /> */}
             </Link>
           </li>
           <li>
