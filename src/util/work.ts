@@ -59,7 +59,7 @@ export const workList: {
   kv: [
     {
       title: '견적주세요 (관리자 , 사용자 ,앱 , 유지보수 )',
-      day: '2023.04 ~ 2023.7',
+      day: '2023.04 ~ 2023.07',
       technology: ' next js (13 ver) , react , react native , nest js ,recoil, react query',
       work: [
         '사용자 앱 , 웹 및 관리자 웹사이트 인수 인계 이후 추가 요구사항 수정 반영 (UI 개선 및 api 작업)',
@@ -68,7 +68,7 @@ export const workList: {
     },
     {
       title: '바이블 25',
-      day: '2023.05 ~ 2023.7',
+      day: '2023.05 ~ 2023.07',
       technology: 'next js (13 ver), react native , nest js ,redux toolkit, swr ',
       work: [
         '기존 스토어에 배포된 어플리케이션 react native로 리뉴얼 100%',
